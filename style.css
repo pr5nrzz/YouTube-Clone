@@ -1,0 +1,163 @@
+/* ----------- CSS Custom Properties ----------- */
+
+:root {
+    --ff-primary: "Roboto", Arial, Helvetica, sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 500;
+
+    --fs-200: 0.625rem;
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-500: 1.6rem;
+
+    --clr-dark: 0, 0%, 7%;
+    --clr-light: 0, 0%, 100%;
+    --clr-grey: 0, 0%, 18.82%;
+}
+
+/* ----------- CSS Reset ----------- */
+
+/* Box Sizing Rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Stop text inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+    margin: 0;
+}
+
+/* Reset core defaults */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* Reduce line height for headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+input,
+label,
+button {
+    line-height: 1.1;
+}
+
+/* Makes it easy to work with images */
+img,
+svg,
+video,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+/* Inherit font weight and font size */
+input,
+textarea,
+select,
+button {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+/* ----------- Utility classes ----------- */
+
+/* General */
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+/* Typography */
+.ff-primary {
+    font-family: var(--ff-primary);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fs-200 {
+    font-size: var(--fs-200);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+.fs-500 {
+    font-size: var(--fs-500);
+}
+
+/* Colors */
+.bg-dark {
+    background-color: hsl(var(--clr-dark));
+}
+
+.bg-light {
+    background-color: hsl(var(--clr-light));
+}
+
+.bg-grey {
+    background-color: hsl(var(--clr-grey));
+}
+
+.text-color-dark {
+    color: hsl(var(--clr-dark));
+}
+
+.text-color-dark {
+    background-color: hsl(var(--clr-light));
+}
+
+.text-color-dark {
+    background-color: hsl(var(--clr-grey));
+}
+
+/* ----------- General Styles ----------- */
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-300);
+    color: hsl(var(--clr-light));
+}
+
+.btn {
+    border: 0;
+    background-color: hsla(var(--clr-light), 0.88);
+}
+
+/* ----------- Components ----------- */
+
